@@ -1,0 +1,201 @@
+<html>
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title> George Ghobros - Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class ="container"> 
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactme">Contact</a></li>
+                </ul>
+                </nav>
+                <div class="header-text">
+                    <p>My Portfolio!</p>
+                    <h1>Hi, I'm George Ghobros</h1>
+                </div>
+        </div>
+    </div>
+            <!-----------about---------->
+    <div id= "about">
+        <div class ="container">
+            <div class ="row">
+                <div class ="about-col-1">
+                    <img src="abt-me.jpg">
+                </div>
+                <div class ="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>A second-year Computer Science Specialist student at the University of Toronto with a 4.0 GPA and a passion for developing innovative software solutions. Proficient in object-oriented programming, data structures, and algorithms, with hands-on experience in Java, Python, C++, and web development frameworks like React, Node.js and Spring Boot. Adept at automating testing processes, debugging, and validating web applications, demonstrated through an impactful internship at the Alcohol and Gaming Commission of Ontario. Skilled in using tools like TestComplete and Azure DevOps, and certified in Python, C, C++, Java, and Azure Fundamentals. Known for strong problem-solving skills, attention to detail, and a collaborative mindset, complemented by leadership experiences and award-winning academic achievements.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class = "tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><strong>Programming Proficiency:</strong> Skilled in Python, Java, C++, and JavaScript.</li>
+                            <li><strong>Software Testing and Automation:</strong> Experienced with tools like Selenium, TestComplete, and Azure DevOps.</li>
+                            <li><strong>Data Structures and Algorithms:</strong> Solid understanding and practical application in problem-solving.</li>
+                            <li><strong>Bilingual Communication:</strong> Fluent in English and French.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <strong>Quality Analyst Intern:</strong> Alcohol and Gaming Commission of Ontario <br> (May 2024 - Aug 2024)
+                                <ul>
+                                    <li>Automated over 2,000 license conversion test cases using Python Selenium and TestComplete, reducing sanity test time by 90%.</li>
+                                    <li>Wrote and executed 750+ manual test cases in Azure DevOps to validate updates for web applications including Salesforce and ERP systems.</li>
+                                    <li>Collaborated with cross-functional teams to ensure the quality of digital products and optimize testing processes.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><strong>University of Toronto:</strong> Pursuing a Specialist in Computer Science with a high distinction GPA.</li>
+                            <li><strong>High School:</strong> Graduated from Sainte-Famille with a 96% average.</li>
+                            <li><strong>IB Diploma:</strong> Earned a bilingual International Baccalaureate Diploma (French and English).</li>
+                            <li><strong>Certifications:</strong> Microsoft Certified: Azure Fundamentals (AZ-900) | TestComplete certification from Smart Bear</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class ="about-col-3"></div>
+            </div> 
+
+        </div>
+
+    </div>
+<!-----------projects---------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list"> 
+                <div>
+                    <h2>Treemap Data Visualization Tool</h2>
+                    <p>
+                        Developed an interactive tool using Python to visualize hierarchical data structures as treemaps. 
+                        Implemented recursive algorithms and modular design to dynamically generate proportional visualizations 
+                        for file systems, JSON, and CSV data. Built a graphical interface with Pygame for real-time data manipulation.
+                    </p>
+                    <a href="https://github.com/ghobrosg/FileVisualiser" target="_blank"><button>Learn More</button></a>
+                </div>
+                
+                <div>
+                    <h2>Efficiency Evaluation of Sorting Algorithms</h2>
+                    <p>
+                        Conducted a comparative study of Bubble, Selection, and Insertion sort algorithms in C++, analyzing their 
+                        time complexity across best, average, and worst-case scenarios. Utilized file handling and memory 
+                        management to process input data efficiently.
+                    </p>
+                    <a href="Mémoire IB.pdf" target="_blank"><button>Learn More</button></a>
+                </div>
+                <div>
+                    <h2>Othello Game Development</h2>
+                    <p>
+                        Implemented the two-player game Othello in Java, including Human vs Human and Human vs Computer (Greedy and Random strategies) gameplay. 
+                        Designed the game with object-oriented principles such as inheritance, interfaces, and abstract classes for flexibility and reusability. 
+                        Enhanced gameplay by investigating the effectiveness of different strategies and ensuring all provided test cases passed in IntelliJ. 
+                        Created a well-documented, concise, and user-friendly codebase while incorporating JUnit tests for robust functionality verification.
+                    </p>
+                    <a href="https://github.com/ghobrosg/othello" target="_blank"><button>Learn More</button></a>
+                </div>
+
+                <div>
+                    <h2>Paint Clone</h2>
+                    <p>
+                        Collaborated in a team to re-architect and extend an existing Java-based paint program using OpenJFX. 
+                        Followed Scrum practices across four sprints to implement features like undo/redo functionality, new drawing modes (e.g., Triangle, Oval, Square), 
+                        and MVC pattern improvements. Conducted code reviews, created UML diagrams, and documented system architecture for ease of onboarding new developers. 
+                        Leveraged design patterns such as Factory, Command, and Strategy to enable modularity and scalability.
+                    </p>
+                    <a href="https://github.com/ghobrosg/Paint" target="_blank"><button>Learn More</button></a>
+                </div>
+
+            </div>
+            <p class="note"><em>Note: Some of the GitHub repositories for these projects are private. If you are interested in viewing them, please contact me for access.</em></p>
+    </div>
+
+<!-----------contact me ---------->
+<div id="contactme">
+    <div class="container">
+        <div class="row">
+            <div class= "contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p>ghobrosg@gmail.com</p>
+            
+                <div class = "social">
+
+                    <a href= "https://www.linkedin.com/in/ghobrosg" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href= "mailto:ghobrosg@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+                </div>
+            <ul>
+                <li> <a href="George Ghobros.pdf" target="_blank"><button>My Resume</button></a> </li>
+                <li> <a href="Academic History.pdf" target="_blank"><button>My Transcript</button></a></li>
+                <li></li>
+            </ul>
+            </div>
+            <div class= "contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type = "email" name = "Email" placeholder="Email" required>
+                    <textarea name="Message" rows="10" placeholder="Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-----------script---------->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (t of tablinks){
+                t.classList.remove("active-link")
+            }
+
+            for (tc of tabcontents){
+                tc.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyRSKgGZ1swi9LD5qx8WFeKp9caCjKlsp_xVmJbEzkZWeVV4C1aOFGhfLPQ4lx4bjg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('porfoliobg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+.header-text{
+margin-top: 20%;
+font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+/*-------about--------------*/
+#about {
+    padding: 80px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links:hover:after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* -------------PORTFOLIO------------------ */
+
+#portfolio {
+    padding: 80px 0;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.project-list div{
+    background: #25355A;
+    padding: 40px;
+    font-size: 10px;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #262626; /* Primary blue color */
+    color: white; /* White text */
+    border: none; /* Remove default borders */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding for a comfortable size */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+    background-color: #004085; /* Even darker blue when pressed */
+    transform: scale(0.98); /* Slightly shrink when pressed */
+}
+
+.note {
+    background-color: #1e1e1e; /* Dark gray to blend with the black background */
+    border-left: 4px solid #004085; /* Cyan accent to match the blue project boxes */
+    padding: 10px 15px; /* Comfortable padding */
+    margin-top: 20px; /* Space above the note */
+    font-style: italic; /* Italicized text for emphasis */
+    color: #ffffff; /* White text for readability on dark backgrounds */
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    box-shadow: 0px 2px 5px rgba(0, 191, 255, 0.3); /* Soft glow effect matching the cyan border */
+}
+
+/* -------------CONTACTME------------------ */
+/* Contact Section Styling */
+#contactme {
+    padding: 80px 0;
+    background-color: #080808; /* Dark background */
+    color: #fff; /* White text */
+}
+
+.sub-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #d1e7fd; /* Light blue for title */
+}
+
+.contact-left {
+    flex-basis: 40%;
+}
+
+.contact-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #b8d4f9; /* Light blue text */
+}
+
+.social a {
+    margin: 0 10px;
+    color: #d1e7fd; /* Light blue for icons */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: #004085; /* Dark blue on hover */
+}
+
+.contact-right {
+    flex-basis: 55%;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #25355A; /* Dark blue for input fields */
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-right textarea {
+    resize: none; /* Disable resizing */
+}
+
+.contact-right button {
+    background-color: #262626; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-right button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.contact-right button:active {
+    background-color: #004085; /* Even darker blue when pressed */
+    transform: scale(0.98); /* Slightly shrink when pressed */
+}
+
+/* Make layout responsive */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .sub-title {
+        text-align: center;
+    }
+}
+
+.contact-left ul li{
+    list-style: none;
+    margin: 10px 0;
+}
