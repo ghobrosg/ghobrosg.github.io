@@ -51,7 +51,7 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li>
-                                <strong>Quality Analyst Intern:</strong> Alcohol and Gaming Commission of Ontario <br> (May 2024 - Aug 2024)
+                                <strong>Quality Assurance Intern:</strong> Alcohol and Gaming Commission of Ontario <br> (May 2024 - Aug 2024)
                                 <ul>
                                     <li>Automated over 2,000 license conversion test cases using Python Selenium and TestComplete, reducing sanity test time by 90%.</li>
                                     <li>Wrote and executed 750+ manual test cases in Azure DevOps to validate updates for web applications including Salesforce and ERP systems.</li>
@@ -81,6 +81,16 @@
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="project-list"> 
+                <div>
+                    <h2>OPS Brainworks</h2>
+                    <p>
+                        Built to help Ontario Public Service members share ideas and collaborate, the platform provides a safe space for open discussion, 
+                        anonymously or with identity, without fear of backlash. It also turns conversations into actionable projects with tools to manage 
+                        and track progress, making it easier to bring solutions to life."
+                    </p>
+                    <a href="https://youtu.be/seZGM2-hrF0" target="_blank"><button>Learn More</button></a>
+                </div>
+
                 <div>
                     <h2>Treemap Data Visualization Tool</h2>
                     <p>
@@ -145,13 +155,19 @@
                 <li></li>
             </ul>
             </div>
-            <div class= "contact-right">
-                <form name = "submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Name" required>
-                    <input type = "email" name = "Email" placeholder="Email" required>
-                    <textarea name="Message" rows="10" placeholder="Message"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
+        <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <textarea name="Message" rows="10" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Message box -->
+        <div id="msg" style="display:none; color: green; margin-top:10px;">
+            Message sent!
+        </div>
+        </div>
+
             </div>
 
         </div>
@@ -177,17 +193,26 @@
 
     </script>
   
-  <script>
+    <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyRSKgGZ1swi9LD5qx8WFeKp9caCjKlsp_xVmJbEzkZWeVV4C1aOFGhfLPQ4lx4bjg/exec'
     const form = document.forms['submit-to-google-sheet']
-  
+    const msg = document.getElementById("msg")
+
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        e.preventDefault()
+
+        // Show message right away
+        msg.style.display = "block"
+        setTimeout(() => { 
+        msg.style.display = "none"
+        }, 3000)
+
+        // Continue with sending to Google Script
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => form.reset()) // reset form after sending
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+    </script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
